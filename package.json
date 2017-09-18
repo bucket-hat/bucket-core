@@ -1,7 +1,7 @@
 {
-  "name": "bucket-core",
-  "version": "0.1.1",
-  "description": "A Node.js web framework - bucket-core",
+  "name": "bucket",
+  "version": "0.1.2",
+  "description": "A Node.js web framework",
   "main": "index.js",
   "directories": {
     "lib": "lib"
