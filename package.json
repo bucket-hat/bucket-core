@@ -1,0 +1,40 @@
+{
+  "name": "bucket-core",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucket-hat/bucket-core.git"
+  },
+  "keywords": [
+    "Node.js",
+    "web framework",
+    "es6/7"
+  ],
+  "author": "Chakhsu Lau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucket-hat/bucket-core/issues"
+  },
+  "homepage": "https://github.com/bucket-hat/bucket-core#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-async-to-module-method": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "log4js": "^1.1.1"
+  },
+  "devDependencies": {
+    "debug": "^3.0.1",
+    "eslint": "^4.7.0"
+  }
+}
