@@ -9,6 +9,7 @@ module.exports = (option) => {
 	let {
 		rootPath,
 		appPath,
+		configPath,
 		callback
 	} = Object.assign({}, option);
 	const corePath = __dirname;
@@ -18,10 +19,12 @@ module.exports = (option) => {
 	if (!appPath) {
 		appPath = path.join(rootPath, './app');
 	}
-	const config = require(path.join(rootPath, './config'));
+	if(!configPath) {
+		configPath = path.join(rootPath, './config');
+	}
 
 	const app = {
-		config,
+		config: require(configPath),
 		path: {
 			core: corePath,
 			root: rootPath,
