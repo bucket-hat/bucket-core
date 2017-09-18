@@ -22,9 +22,9 @@
   "author": "chakhsu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bucket-hat/bucket-core/issues"
+    "url": "https://github.com/bucket-hat/bucket/issues"
   },
-  "homepage": "https://github.com/bucket-hat/bucket-core#readme",
+  "homepage": "https://github.com/bucket-hat/bucket#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-transform-async-to-module-method": "^6.24.1",
