@@ -10,6 +10,7 @@ module.exports = (option) => {
 		rootPath,
 		appPath,
 		configPath,
+		pluginPath,
 		callback
 	} = Object.assign({}, option);
 	const corePath = __dirname;
@@ -21,6 +22,9 @@ module.exports = (option) => {
 	}
 	if(!configPath) {
 		configPath = path.join(rootPath, './config');
+	}
+	if(!pluginPath) {
+		pluginPath = path.join(rootPath, './config/plugin');
 	}
 
 	const app = {
@@ -61,6 +65,10 @@ module.exports = (option) => {
 	(async() => {
 		debug('init ...');
 		await loadComponent(app, app.library = {}, path.join(corePath, './lib')).catch(error => {
+			debug('catch error', error);
+			process.abort();
+		});
+		await loadPluginComponent(app, app.plugin = {}, path.join(appPath, './config/plugin')).catch(error => {
 			debug('catch error', error);
 			process.abort();
 		});
