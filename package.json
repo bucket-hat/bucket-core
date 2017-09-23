@@ -29,10 +29,11 @@
     "babel-core": "^6.26.0",
     "babel-plugin-transform-async-to-module-method": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "chalk": "^2.1.0",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-router": "^7.2.1",
-    "log4js": "^1.1.1"
+    "tracer": "^0.8.11"
   },
   "devDependencies": {
     "debug": "^3.0.1",
