@@ -82,5 +82,5 @@ module.exports = (option) => {
 		debug('init completed');
 		if (callback)
 			callback(app);
-	})();
+	})().catch(console.error);
 };
